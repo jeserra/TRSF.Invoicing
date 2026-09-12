@@ -37,8 +37,8 @@ path either:
   `.ValidFrom`/`.ValidUntil` are display-only, never checked against the
   invoice date.
 - `ISATProvider.Timbrar` is only reached when a caller passes
-  `Timbrado: true` to `CreateCFDI` — both consumers currently in this
-  ecosystem (the demo web app, the MCP server) call it with `Timbrado: false`
+  `Timbrado: true` to `CreateCFDI` — consumer currently in this
+  ecosystem (the demo web app) call it with `Timbrado: false`
   and never stamp. If your use case is seal-only too, a stub that throws
   `NotSupportedException` from both methods is a legitimate, complete
   implementation (see `NotConnectedSatProvider`/`DemoSatProvider` in the
